@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1D740D1DD0B4D4C7F08A9C5 /* Pods_Kingfisher_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F98F25A95B10F2D450F9AC /* Pods_Kingfisher_Demo.framework */; };
 		E78935A32773680000B7686C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78935A22773680000B7686C /* AppDelegate.swift */; };
 		E78935A52773680000B7686C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78935A42773680000B7686C /* SceneDelegate.swift */; };
 		E78935A72773680000B7686C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78935A62773680000B7686C /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3951C8EC6B85842D2214174F /* Pods-Kingfisher-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kingfisher-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Kingfisher-Demo/Pods-Kingfisher-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		62F98F25A95B10F2D450F9AC /* Pods_Kingfisher_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kingfisher_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AF0E2B799CE62411961DCAB /* Pods-Kingfisher-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kingfisher-Demo.release.xcconfig"; path = "Target Support Files/Pods-Kingfisher-Demo/Pods-Kingfisher-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		E789359F2773680000B7686C /* Kingfisher-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kingfisher-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78935A22773680000B7686C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E78935A42773680000B7686C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D740D1DD0B4D4C7F08A9C5 /* Pods_Kingfisher_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F316BC8AC07CF6CEEE670D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3951C8EC6B85842D2214174F /* Pods-Kingfisher-Demo.debug.xcconfig */,
+				7AF0E2B799CE62411961DCAB /* Pods-Kingfisher-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		63CECD423C6C456208097776 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62F98F25A95B10F2D450F9AC /* Pods_Kingfisher_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E78935962773680000B7686C = {
 			isa = PBXGroup;
 			children = (
 				E78935A12773680000B7686C /* Kingfisher-Demo */,
 				E78935A02773680000B7686C /* Products */,
+				1F316BC8AC07CF6CEEE670D5 /* Pods */,
+				63CECD423C6C456208097776 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E78935B32773680100B7686C /* Build configuration list for PBXNativeTarget "Kingfisher-Demo" */;
 			buildPhases = (
+				624B47C0374CDA7DA53537C3 /* [CP] Check Pods Manifest.lock */,
 				E789359B2773680000B7686C /* Sources */,
 				E789359C2773680000B7686C /* Frameworks */,
 				E789359D2773680000B7686C /* Resources */,
+				4A6A165441878FEAA1750186 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A6A165441878FEAA1750186 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kingfisher-Demo/Pods-Kingfisher-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kingfisher-Demo/Pods-Kingfisher-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kingfisher-Demo/Pods-Kingfisher-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		624B47C0374CDA7DA53537C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kingfisher-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E789359B2773680000B7686C /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		E78935B42773680100B7686C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3951C8EC6B85842D2214174F /* Pods-Kingfisher-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +381,7 @@
 		};
 		E78935B52773680100B7686C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AF0E2B799CE62411961DCAB /* Pods-Kingfisher-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
